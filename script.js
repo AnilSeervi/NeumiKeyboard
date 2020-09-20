@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const toggle = document.querySelector(".toggle");
 const spaceBtn = document.querySelector("#space");
+const backSpc = document.querySelector("#backspc");
 const display = document.querySelector(".display");
 toggle.addEventListener("click", () => {
   if (toggle.value === "Light") {
@@ -37,5 +38,11 @@ function disp(result) {
   };
   display.ondblclick = () => {
     form.textarea.value = "";
+  };
+  backSpc.onclick = () => {
+    form.textarea.value = form.textarea.value.substring(
+      0,
+      form.textarea.value.length - 1
+    );
   };
 }

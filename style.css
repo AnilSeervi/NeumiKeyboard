@@ -99,6 +99,7 @@ p {
   resize: none;
   pointer-events: none;
   border: none;
+  text-transform: capitalize;
   border-radius: 10px;
   outline: none;
   padding: 10px 15px;
@@ -138,11 +139,11 @@ p {
     font-size: 10px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .wrapper .keys input {
     font-size: 10px;
-    height: 22px;
-    min-width: 22px;
+    height: 6vw;
+    min-width: 6vw;
   }
   .wrapper .keys input:active {
     font-size: 9px;
